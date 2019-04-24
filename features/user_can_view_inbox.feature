@@ -5,8 +5,8 @@ Feature: User can view the inbox
 
     Scenario: User can view inbox
         Given the following user exists
-            |  email              | password  |
-            |  george@gmail.com   | psw12345  |
+            |name       |  email              | password  |
+            |georgeZane |  george@gmail.com   | psw12345  |
         
         When I visit the landing page
         Then I click on the "login" link
