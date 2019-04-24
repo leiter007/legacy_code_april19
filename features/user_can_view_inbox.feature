@@ -11,7 +11,7 @@ Feature: User can view the inbox
         When I visit the landing page
         Then I click on the "Login" link
         And I fill in the "user_email" field with "george@gmail.com"
-        And i fill in the "Password" field with "psw12345"
+        And i fill in the "user_password" field with "psw12345"
         Then I should see "Signed in successfully."
         And I should see "Inbox"
         Then I click on the "Inbox" link
