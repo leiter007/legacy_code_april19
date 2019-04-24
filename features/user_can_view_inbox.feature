@@ -9,7 +9,7 @@ Feature: User can view the inbox
             |georgeZane |  george@gmail.com   | psw12345  |
         
         When I visit the landing page
-        Then I click on the "login" link
+        Then I click on the "Login" link
         And I fill in the "email" field with "george@gmail.com"
         And i fill in the "password" field with "psw12345"
         Then I should see "Signed in successfully."
