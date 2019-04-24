@@ -5,7 +5,7 @@ Given("the following user exists") do |table|
   end
   
   When("I visit the landing page") do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit root_path
   end
   
   Then("I click on the {string} link") do |string|
