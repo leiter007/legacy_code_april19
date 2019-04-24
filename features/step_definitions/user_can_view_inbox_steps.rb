@@ -12,8 +12,8 @@ Given("the following user exists") do |table|
     click_link(login_link)
   end
   
-  Then("I fill in the {string} field with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I fill in the {string} field with {string}") do |user_email, email|
+    page.fill_in 'user_email', with: 'email'
   end
   
   Then("i fill in the {string} field with {string}") do |string, string2|
