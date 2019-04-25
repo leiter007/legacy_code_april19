@@ -16,10 +16,10 @@ Given("the following user exists") do |table|
     page.fill_in "user_email", with: "email"
   end
   
-  Then("i fill in the {string} field with {string}") do |user_password, psss|
-    page.fill_in "user_password", with: "pass"
+  Then("I click {string} button") do |login|
+    click_button(login)
   end
-  
-  Then("I should see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+ 
+  Then("I should see {string}") do |content|
+    expect(page).to have_content content
   end
