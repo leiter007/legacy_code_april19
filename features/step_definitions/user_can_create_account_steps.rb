@@ -14,14 +14,7 @@ end
     click_button string
   end
   
-  Then("I should be on {string} page") do |string|
-    visit root_path
-  end
-  
   Then("I should see {string}") do |string|
-    page.has_content? string
+    expect(page).to have_content string
   end
 
-  Then("I should not see {string}") do |string|
-    page.has_no_content? string
-  end

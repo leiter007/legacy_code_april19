@@ -5,7 +5,7 @@ Feature: User can create account
 
     Background: 
         Given I visit the "landing" page
-        When I click "Sign up" link
+        And I click "Sign up" link
 
     Scenario: Successfully create an account [Happy Path]
         When I fill in "Name" with "Noel"
@@ -13,16 +13,18 @@ Feature: User can create account
         And I fill in "Password" with "password"
         And I fill in "Password confirmation" with "password"
         And I click "Create"
-        Then I should be on "landing" page
-        And I should see "'Welcome! You have signed up successfully"
-        And I should see "Hello, Noel"
-        And I should see "Inbox"
-        And I should see "Logout"
-        And I should not see "Login"
-        And I should not see "Sign up"
+        #Then I should be on "landing" page
+        Then I should see "Welcome! You have signed up successfully"
+   
 
         #[Sad Path]
         # Name with 10 character should NOT give error message
         # Email without @ should NOT work???
         # Not filled in all field
         # Only one user per email
+
+        # Validations:
+        # Password length, min 8, 
+        # password = password confirmation
+        # valid email, unique
+        # duplicates, email
