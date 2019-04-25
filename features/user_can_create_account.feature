@@ -14,8 +14,12 @@ Feature: User can create account
         And I fill in "Password confirmation" with "password"
         And I click "Create"
         Then I should be on "landing" page
+        And I should see "'Welcome! You have signed up successfully"
         And I should see "Hello, Noel"
-
+        And I should see "Inbox"
+        And I should see "Logout"
+        And I should not see "Login"
+        And I should not see "Sign up"
 
         #[Sad Path]
         # Name with 10 character should NOT give error message
