@@ -23,5 +23,5 @@ end
   end
 
   Then("I should not see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    page.has_no_content? string
   end
