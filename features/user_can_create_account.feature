@@ -4,7 +4,7 @@ Feature: User can create account
     I would like to be able to create an account
 
     Background: 
-        Given I visit the "landing" page
+        Given I visit the "inbox" page
         When I click "Sign up" link
 
     Scenario: Successfully create an account [Happy Path]
