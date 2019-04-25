@@ -8,8 +8,8 @@ Feature: User can create account
         And I click "Sign up" link
 
     Scenario: Successfully create an account [Happy Path]
-        When I fill in "Name" with "Noel"
-        And I fill in "Email" with "noel@craft.se"
+        When I fill in "Name" with "Feliks"
+        And I fill in "Email" with "feliks@crafthello.se"
         And I fill in "Password" with "password"
         And I fill in "Password confirmation" with "password"
         And I click "Create"
