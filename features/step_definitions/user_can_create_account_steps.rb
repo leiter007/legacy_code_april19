@@ -11,7 +11,7 @@ end
   end
   
   When("I click {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    click_button string
   end
   
   Then("I should be on {string} page") do |string|
