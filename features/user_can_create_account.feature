@@ -17,7 +17,6 @@ Feature: User can create account
         And I should see "Hello, Noel"
 
 
-
         #[Sad Path]
         # Name with 10 character should NOT give error message
         # Email without @ should NOT work???

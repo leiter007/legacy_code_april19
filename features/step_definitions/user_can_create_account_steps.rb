@@ -3,7 +3,7 @@ Given("I visit the {string} page") do |string|
 end
   
   When("I click {string} link") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    click_link(string)
   end
   
   When("I fill in {string} with {string}") do |string, string2|
