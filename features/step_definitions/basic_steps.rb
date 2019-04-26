@@ -1,5 +1,5 @@
 
-Given("I visit the {string} page") do |string|
+Given("I visit the landing page") do
   visit root_path
 end
 
