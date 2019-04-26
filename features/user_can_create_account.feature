@@ -9,11 +9,11 @@ Feature: User can create account
 
     Scenario: Successfully create an account [Happy Path]
         When I fill in "Name" with "Feliks"
-        And I fill in "Email" with "feliks@crafthello.se"
+        And I fill in "Email" with "feliks@craft.se"
         And I fill in "Password" with "password"
         And I fill in "Password confirmation" with "password"
         And I click "Create"
-        #Then I should be on "landing" page
+        And Stop
         Then I should see "Welcome! You have signed up successfully"
    
 
