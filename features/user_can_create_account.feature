@@ -13,7 +13,6 @@ Feature: User can create account
         And I fill in "Password" with "password"
         And I fill in "Password confirmation" with "password"
         And I click "Create"
-        And Stop
         Then I should see "Welcome! You have signed up successfully"
    
 

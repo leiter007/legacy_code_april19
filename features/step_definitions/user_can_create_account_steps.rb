@@ -14,12 +14,3 @@ end
 When("I click {string}") do |link|
   click_on link 
 end
-
-Then("I should see {string}") do |content|
-  binding.pry
-  expect(page).to have_content content
-end
-
-When("Stop") do
-  binding.pry
-end
