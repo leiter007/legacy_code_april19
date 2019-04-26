@@ -14,16 +14,20 @@ Feature: User can create account
         And I fill in "Password confirmation" with "password"
         And I click "Create"
         Then I should see "Welcome! You have signed up successfully"
-   
 
-        #[Sad Path]
-        # Name with 10 character should NOT give error message
-        # Email without @ should NOT work???
-        # Not filled in all field
-        # Only one user per email
-
-        # Validations:
-        # Password length, min 8, 
-        # password = password confirmation
-        # valid email, unique
-        # duplicates, email
+    Scenario: User can not select an email and name that has already been taken
+        When I fill in "Name" with "Noel"
+        And I fill in "Email" with "noel@craft.se"
+        And I fill in "Password" with "password"
+        And I fill in "Password confirmation" with "password"
+        And I click "Create"
+        And I click "Logout"
+        And I visit the landing page
+        And I click "Sign up" link
+        And I fill in "Name" with "Noel"
+        And I fill in "Email" with "noel@craft.se"
+        And I fill in "Password" with "password1"
+        And I fill in "Password confirmation" with "password1"
+        And I click "Create"
+        Then I should see "Email has already been taken"
+        And I should see "Name has already been taken"
