@@ -9,11 +9,11 @@ Feature: User can view the inbox
             |georgeZane |  george@gmail.com   | psw12345  |
         
         When I visit the landing page
-        Then I click on the "Login" link
+        Then I click "Login" link
         And I fill in the "user_email" field with "george@gmail.com"
         And I fill in the "user_password" field with "psw12345"
         And I click "Log in" button
         Then I should see "Signed in successfully."
         And I should see "Inbox"
-        Then I click on the "Inbox" link
+        Then I click "Inbox" link
         Then I should see "Compose"
