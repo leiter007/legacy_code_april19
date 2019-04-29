@@ -1,0 +1,9 @@
+SUBMISSION WEEK 4: LEGACY CODE CHALLENGE (full group assignment)
+
+My repo: https://github.com/leiter007/rails_bdd
+
+Two pull requests waiting for merge:
+* https://github.com/CraftAcademy/legacy_code_april19/pull/6
+* https://github.com/CraftAcademy/legacy_code_april19/pull/7
+
+Deployed site: https://felix-rails-bdd.herokuapp.com/
